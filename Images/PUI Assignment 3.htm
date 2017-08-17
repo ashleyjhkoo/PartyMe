@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0121)file:///Users/ashleyjhkoo/Documents/Ashley_Document/Project_ETC_2016_Fall/Project_PUI/Assignment/Assignment_04/Index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>PUI Assignment 3</title>
+    <link rel="stylesheet" href="./PUI Assignment 3_files/bootstrap.min.css">
+    <link href="./PUI Assignment 3_files/css" rel="stylesheet">
+  	<link rel="stylesheet" href="./PUI Assignment 3_files/style.css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="./PUI Assignment 3_files/AshleyScript2.js"></script>
+    <script src="./PUI Assignment 3_files/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./PUI Assignment 3_files/jquery-latest.min.js"></script>
+    <script src="./PUI Assignment 3_files/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script> 
+    <script src="./PUI Assignment 3_files/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+   
+  <div id="headMenu1" class="row1">
+    <div class="col-xs-3"><img src="./PUI Assignment 3_files/cameraUI.png" class="cameraPicUI" alt="Camera Ui" align="middle"></div>
+    <div id="welcomeAshley" class="col-xs-6 text-center">Welcome, Ashley!</div>
+    <div id="logoPic" class="col-xs-3 text-center"> <img src="./PUI Assignment 3_files/logoUI.png" class="logoPicUI" alt="PartyMe Logo" align="middle"> </div> <!-- height="121" width="177" -->
+  </div>
+
+  <div id="headMenu2" class="row2">
+    <div class="col-xs-3">.col-sm-3</div>
+    <div class="col-xs-7">.col-sm-6</div>
+    <div class="col-xs-2">.col-sm-3</div>
+  </div>
+
+   <!-- Create Navigation menu button -->
+   <nav class="navbar navbar-default">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+      <span class="glyphicon glyphicon-menu-hamburger"></span>
+     </button>
+      <a class="navbar-brand">
+  	   <div id="titleBoard" class="center">
+  		   <h2 style="margin-top: 0;">To-Do-List</h2>
+  	   </div> 
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <div id="buttonMenu">
+        <!-- Create About button -->
+        <button type="button" id="mdlId" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#demo">
+          About 
+        </button>
+      </div>
+    </div>  
+   </nav>
+
+   <!-- Add To-Do-List button -->
+   <div> <button onclick="addList()">Add To-Do-List</button> </div>
+   <br>
+   <div id="listContainer">
+      <p id="txtContainer" ,="" class="pClass"></p>
+   </div>
+  
+  <!-- Pop up screen set up -->
+   <div class="modal fade" id="demo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+           <h1 class="modal-title">About</h1>
+         </div>
+         <div class="modal-body">
+          To-Do-List app. is about.....
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+      </div>
+   </div>
+    
+  	
+</body></html>

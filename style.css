@@ -1,0 +1,571 @@
+/* Create To-do-list CSS decoration - Start */
+.avia_mobile #top .av-parallax-section { z-index: 0; }
+
+.row1 {
+
+  position: relative;
+  resize: vertical;
+  overflow: auto;
+}
+
+.logoPicUI {
+
+  margin: 0 auto;
+  text-align: right;
+  transform: translateY(-10%);
+  resize: vertical;
+  overflow: auto;
+  height: 200px;
+  width: 50%;
+}
+
+.cameraPicUI {
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(-23%);
+  resize: vertical;
+  overflow: auto;
+}
+
+#headMenu1 {
+  background-color: #6ac8c2;
+  padding-top: 30px;
+  padding-bottom: 1px;
+  vertical-align:middle; 
+  text-align:center;
+
+  white-space: nowrap;
+}
+
+
+#headMenu2 {
+  background-color: #62438F ;
+  height: 70px;
+  line-height: 70px;
+  white-space: nowrap;
+
+}
+
+#welcomeAshley {
+  color: #dafafd;
+  text-align: center;
+  font-size: 5;
+
+  height: 70px;
+  line-height: 70px;
+  white-space: nowrap;
+
+}
+
+.logoPicUI {
+   margin:0 auto; 
+  height: 120%; 
+  width: 120%; 
+
+}
+
+#logoPic img {
+  display: block;
+  margin:0 auto; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logoPic {
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+}
+
+h1 {
+  color: purple;
+  background-color: #41C0C4;
+  line-height: 0.2;
+  /* border: 1px solid black;*/
+}
+
+h2 {
+  color: purple;	
+}
+
+p {
+	background-color: #CFCEED;
+	line-height: 1px; 
+	margin-bottom: 10px !important;
+}
+
+p.indent{ padding-left: 0.9em }
+
+
+#myHatId {
+	margin-left: 5px;
+	margin-right: 5px;
+/*    hspace: 20;*/
+	padding: 5px;
+
+}
+
+br {
+	line-height: 0px;
+	margin: 0 !important;
+}
+
+#checkBoxId {
+	margin-left: 5px;
+	margin-right: 5px;	
+	padding: 5px;	
+}
+
+
+.button {
+	border-radius: 4px;
+    background-color: #6ac8c2; /* Green */
+    border: none;
+    color: white;
+    padding: 9px 32px;
+    text-align: center;
+    transition: all 0.5s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.btnCreateParty {
+	margin-top: 12px;
+    background-color: white;
+    color: black;
+    border: 2px solid #6ac8c2;
+}
+
+
+.btnDelete {
+    background-color: white;
+    color: black;
+    border: 2px solid #62438F;
+
+    padding: 8px 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 1px 1px;
+    cursor: pointer;
+}
+
+.btnDelete:hover {
+	background-color: #62438F;
+    color: white;
+}
+
+
+span.thick {
+	font-weight: bold;
+	font-size: 12px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 5px;
+}
+
+
+.navbar-header {
+	color: purple;
+	text-align: center;
+	background-color: #41C0C4;
+	line-height: 2;
+	-webkit-animation-name: bgAnimation; /* Key Frames Animation - Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Key Frames Animation - Chrome, Safari, Opera */
+    animation-name: bgAnimation;
+    animation-duration: 4s;
+}
+
+
+.mdlId {
+	line-height: 0.5;
+	font-size: 1px;
+}
+
+.buttonMenu {
+	text-align: right;
+}
+
+/* Change the location of About Button */
+.navbar-collapse {
+	text-align: right;
+}
+
+/* Change the color of About Button */
+.btn-primary {
+  color: #fff;
+  background-color: #41C0C4;
+  border-color: #41C0C4; 
+  font-size: 12px;
+}
+
+.btn-primary.focus {
+  color: #fff;
+  background-color: #41C0C4;
+  border-color: #41C0C4;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #41C0C4;
+  border-color: #41C0C4;
+}
+/* Create To-do-list CSS decoration - End */
+
+/* First Menu Bar CSS decoration - Start */
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.vertical-align {
+	display: flex;
+	flex-direction: row;
+
+/*	height: 120px;*/
+}
+
+
+#firstMenuBar {
+	height: 110px;
+	background-color: #6ac8c2;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.vertical-align > [class^="col-"] > div,
+.vertical-align > [class*=" col-"] > div {
+	flex-grow: 1;
+}
+
+/*.vertical-align > div:first-child {
+	background-color: mediumaquamarine;
+}
+
+.vertical-align > div:last-child {
+	background-color: gold;
+}*/
+.col-xs-3 .col-md-3 .col-lg-3 {
+  width: auto;
+  display: inline-block; 
+ }
+
+
+
+#hatPic {
+	width: 120%;
+	height: auto;
+}
+
+#middleCol_Row1 { 
+	color: #dafafd;
+}
+
+#cameraPic {
+	width: 100%;
+	height: auto;
+}
+
+#namePic {
+	width: 100%;
+	height: auto;
+}
+/* First Menu Bar CSS decoration - End */
+
+/* Create a New Party div CSS decoration - Start */
+
+.center {
+  margin: 0 auto;
+  width: 300px;
+  background: white;
+  padding: 5px;
+  color: white;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: none;
+  overflow: auto;
+}
+
+.col-xs-12 .col-md-12 .col-lg-12 {
+
+  width: auto;
+  display: inline-block; 
+  margin: 0 auto;
+  width: 200px;
+  background: black;
+  padding: 20px;
+  color: white;
+ }
+/* Create a New Party div CSS decoration - End */
+
+/* Boostrap Modal - Pop up screen set up - Start */
+.modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -300px, 0);
+    transform: translate3d(0, -300px, 0);
+    opacity: 1;
+}
+
+.modal-header {
+  font-family: "Bree Serif";
+  background-color: #F6F5F5;
+  border-radius: 5px;
+}
+
+.modal-body {
+  font-size: 16px;
+}
+/* Boostrap Modal - Pop up screen set up - End */
+
+/* Second Menu Bar CSS decoration - Start */
+#secondMenuBar {
+	height: 60px;
+	background-color: #5b3d8d;
+}
+
+.col-xs-2 .col-md-2 .col-lg-2 {
+  width: auto;
+  display: inline-block; 
+ }
+
+ #partyPic {
+	width: 180%;
+	height: auto;
+}
+
+#hamPic {
+	width: 50%;
+	height: auto;
+}
+/* Second Menu Bar CSS decoration - End */
+
+
+/* Side navBar Toggle 01 - Start */
+.indexcity {
+  z-index: 9999;
+}
+
+.right {
+    right: 0 !important;
+    left: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-collapse{
+      background-color:#e9f3f0;
+      position: fixed;
+      top: 0;
+      transition:all 0.8s ease-out;
+      height: 100%;
+      width: 80%;
+      left: 700px;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+    color: #000;
+    }
+}
+/* Side navBar Toggle 01 - End */
+
+/* Side navBar Toggle 02 - Start */
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #8fdcdb;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+#partyListID {
+	font-size: 20px;
+}
+
+#partyList {
+    background-color: #62438F;
+    text-align: left;
+    color: #8fdcdb;
+    font-size: 15px;
+}
+
+.list-group-item {
+	font-size: 11px;
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Side navBar Toggle 02 - End */
+
+/* Side navBar Task Screen Toggle - Start */
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenavTask {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #8fdcdb;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenavTask a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+#partyListID {
+	font-size: 20px;
+}
+
+#partyList {
+    background-color: #62438F;
+    text-align: left;
+    color: #8fdcdb;
+    font-size: 15px;
+}
+
+#eachRow tr:hover {
+	cursor: pointer;
+}
+
+#txtContainer div:hover {
+	cursor: pointer;	
+}
+
+.list-group-item {
+	font-size: 11px;
+}
+
+
+.sidenavTask a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenavTask .closebtnTask {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenavTask {padding-top: 15px;}
+  .sidenavTask a {font-size: 18px;}
+}
+/* Side navBar Task Screen Toggle - Ebd */
+
+/* Key Frames Animation - Chrome, Safari, Opera - Start */
+@-webkit-keyframes bgAnimation {
+    from {background-color: #41C0C4;}
+    to {background-color: #F5FFFA;}
+}
+
+/* Key Frames Animation - Standard syntax */
+@keyframes bgAnimation {
+    from {background-color: #41C0C4;}
+    to {background-color: #F5FFFA;}
+}
+/* Key Frames Animation - Chrome, Safari, Opera - End */

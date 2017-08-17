@@ -1,0 +1,191 @@
+.row1 {
+  /*height: 300px;*/
+  /*margin: 20px;*/
+/*  width: 300px;*/
+  position: relative;
+  resize: vertical;
+  overflow: auto;
+}
+
+.logoPicUI {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+/*  padding: 20px;*/
+  transform: translateY(-50%);
+  resize: vertical;
+  overflow: auto;
+}
+
+#headMenu1 {
+  background-color: #6ac8c2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  vertical-align:middle; 
+  text-align:center
+  /*height: 100px;
+  line-height: 100px;
+  white-space: nowrap;*/
+}
+
+
+#headMenu2 {
+  background-color: #62438F ;
+  height: 70px;
+  line-height: 70px;
+  white-space: nowrap;
+/*  height: 100px;
+  line-height: 100px;*/
+}
+
+#welcomeAshley {
+  color: #dafafd;
+  /*text-align: center;*/
+  font-size: 5;
+  /*height: 100px;
+  line-height: 100px;
+  white-space: nowrap;*/
+/*  padding-top: 30px;
+  padding-bottom: 30px;*/
+/*  height: 100px;
+  line-height: 100px;
+  white-space: nowrap;*/
+
+}
+
+.logoPicUI {
+  height: 120%; 
+  width: 120%; 
+
+}
+
+#logoPic img {
+  display: block;
+
+    margin:0 auto; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logoPic {
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+}
+
+h1 {
+  color: purple;
+  background-color: #41C0C4;
+  line-height: 0.2;
+  /* border: 1px solid black;*/
+}
+
+h2 {
+  color: purple;	
+}
+
+p {
+	background-color: #CFCEED;
+	line-height: 1.5; 
+	margin: 0px;
+}
+
+br {
+	line-height: 1;
+}
+
+button {
+	background-color: #41C0C4;
+}
+
+.navbar-header {
+	color: purple;
+	text-align: center;
+	background-color: #41C0C4;
+	line-height: 2;
+	-webkit-animation-name: bgAnimation; /* Key Frames Animation - Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Key Frames Animation - Chrome, Safari, Opera */
+    animation-name: bgAnimation;
+    animation-duration: 4s;
+}
+
+
+.mdlId {
+	line-height: 0.5;
+	font-size: 1px;
+}
+
+.buttonMenu {
+	text-align: right;
+}
+
+/* Change the location of About Button */
+.navbar-collapse {
+	text-align: right;
+}
+
+/* Change the color of About Button */
+.btn-primary {
+  color: #fff;
+  background-color: #41C0C4;
+  border-color: #41C0C4; 
+  font-size: 12px;
+}
+
+.btn-primary.focus {
+  color: #fff;
+  background-color: #41C0C4;
+  border-color: #41C0C4;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #41C0C4;
+  border-color: #41C0C4;
+}
+
+/* Boostrap Modal - Pop up screen */
+.modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -300px, 0);
+    transform: translate3d(0, -300px, 0);
+    opacity: 1;
+}
+
+.modal-header {
+  font-family: "Bree Serif";
+  background-color: #F6F5F5;
+  border-radius: 5px;
+}
+
+.modal-body {
+  font-size: 16px;
+}
+/* Pot up screen set up */
+
+/* Key Frames Animation - Chrome, Safari, Opera */
+@-webkit-keyframes bgAnimation {
+    from {background-color: #41C0C4;}
+    to {background-color: #F5FFFA;}
+}
+
+/* Key Frames Animation - Standard syntax */
+@keyframes bgAnimation {
+    from {background-color: #41C0C4;}
+    to {background-color: #F5FFFA;}
+}

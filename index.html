@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+
+    <!-- Mobile view adjustment -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	
+    <title>PUI Assignment 3</title>
+
+    <!--Import Google Icon Font-->
+<!--     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  -->   
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- My own style sheet css file -->
+  	<link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+ 
+  <div class="container"> <!-- Container Start --> 
+  <!-- First Menu Bar -->
+    <div id="firstMenuBar" class="row vertical-align">
+      <div id="firstCol_Row1" class="col-xs-3 col-md-3 col-lg-3"> 
+        <table style="width:100%">
+           <tr> 
+             <th> 
+               <img id="cameraPic" class="center-block" src="Images/cameraUI.png" /> 
+             </th> 
+           </tr> 
+           <tr>
+             <th> 
+               <img id="namePic" class="center-block" src="Images/ashleyKooUI.png" /> 
+             </th>
+           </tr>
+        </table>       
+      </div>
+      <div id="middleCol_Row1" class="col-xs-6 col-md-6 col-lg-6"> Welcome, Ashley! </div>
+      <!-- Apply Modal to the PartyMe logo image -->
+      <div id="lastCol_Row1" class="col-xs-3 col-md-3 col-lg-3"> <img id="hatPic" class="center-block" src="Images/logoUI.png" data-toggle="modal" data-target="#demo"/> </div>
+    </div>  
+    <!-- First Menu Bar -->
+
+    <!-- Pop up screen set up -->
+   <div class="modal fade" id="demo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+           <h1 class="modal-title">About</h1>
+         </div>
+         <div class="modal-body">
+          Party Me is a To-Do-List app. specialized for the party events.
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+      </div>
+   </div>
+   <!-- Pop up screen set up -->
+
+    <!-- Second Menu Bar Start -->
+    <div id="secondMenuBar" class="row vertical-align">
+      <div id="firstCol_Row2" class="col-xs-2 col-md-2 col-lg-2"> 
+               <img id="partyPic" class="center-block" src="Images/partyUI.png" />                    
+      </div>
+      <div id="middleCol_Row2" class="col-xs-8 col-md-8 col-lg-8">   </div>
+      <div id="lastCol_Row2" class="col-xs-2 col-md-2 col-lg-2">   
+              <img id="hamPic" class="center-block" class="navbar-toggle" src="Images/hamUI.png" onclick="openNav()"/>
+      </div> <!-- end lastCol_Row2 -->
+    </div> <!-- end row vertical-align -->
+    <!-- Second Menu Bar End -->
+
+  </div> <!-- Container End -->  
+
+  <!-- Side navBar screen Toggle - Start -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="right: "0" ">&times;</a>
+    <div class="container">
+      <h2 id="partyListID">Party Lists</h2>
+      <a href="#demo7" id="partyList" class="btn btn-info" data-toggle="collapse">Party 01</a>
+      <div id="demo7" class="collapse">
+         <ul class="list-group">
+           <li class="list-group-item">Task 01</li>
+           <li class="list-group-item">Task 02</li>
+           <li class="list-group-item">Task 03</li>
+         </ul>
+      </div>
+    </div>
+  </div>  
+  <!-- Side navBar screen Toggle - End -->
+
+  <!-- Add To-Do-List button Start -->
+  <div id="createPartyDiv" class="row vertical-align">
+
+<!--      <div id="partyDivRow" class="col-xs-12 col-md-12 col-lg-12 center"> -->
+           <div id="partyDivRow" class="row vertical-align center">
+               <div> 
+                    <button id="btnCreatePartyID" class="button btnCreateParty" onclick = "addList()"><span id="spanPartyID"></span></button> 
+               </div>
+           </div>
+  </div>   
+<!--   <br> -->
+  <div id="listContainer">
+           <div id="txtContainer"> </div>       
+  </div>
+
+  <!-- Add To-Do-List button End -->
+
+  <!-- Party Task navBar screen Toggle - Start -->
+  <div id="mySidenavTask" class="sidenavTask">
+      <a href="javascript:void(0)" class="closebtnTask" onclick="closeNavTask()">&times;</a>
+      <div class="container">
+        <h2 id="partyListID">Party Lists</h2>
+        <a href="#demo8" id="partyList" class="btn btn-info" data-toggle="collapse">Party 01</a>
+        <div id="demo8" class="collapse">
+           <ul class="list-group">
+             <li class="list-group-item">Task 01</li>
+             <li class="list-group-item">Task 02</li>
+             <li class="list-group-item">Task 03</li>
+           </ul>
+        </div>
+      </div>
+  </div>    
+  <!-- Party Task navBar screen Toggle - End -->
+
+  <!-- All script files link -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- My JavaScript -->
+  <script src = "AshleyScript.js"></script>
+  </body>  
